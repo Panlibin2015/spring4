@@ -2,9 +2,13 @@ package com.demo.spring4.chapter01.javaconfig.service.impl;
 
 import com.demo.spring4.chapter01.javaconfig.dao.FunctionDao;
 import com.demo.spring4.chapter01.javaconfig.service.FunctionService;
-import com.sun.javafx.binding.StringFormatter;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * @author Panlibin2015
+ * @title <p>测试服务实现类<p>
+ * @date 2017-11-8
+ */
 public class FunctionServiceImpl implements FunctionService {
     @Autowired
     private FunctionDao functionDao;

@@ -6,7 +6,12 @@ import com.demo.spring4.chapter01.javaconfig.service.impl.FunctionServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
+/**
+ * @title <p>Java 配置类<p>
+ * @desc 涉及到的注解 @Configuration | @Bean | @Scope
+ * @author Panlibin2015
+ * @date 2017-11-8
+ */
 @Configuration
 public class BeanConfiguration {
     @Bean // 声明一个Bean,默认方法名为其BeanId

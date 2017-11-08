@@ -5,6 +5,12 @@ import com.demo.spring4.chapter01.javaconfig.service.impl.FunctionServiceImpl;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * @title <p>Java 配置类配置Bean 演示案例<p>
+ * @desc 涉及到的注解 @Configuration | @Bean | @Scope
+ * @author Panlibin2015
+ * @date 2017-11-8
+ */
 public class JavaConfigTest {
     @Test
     public void paramInject() {
