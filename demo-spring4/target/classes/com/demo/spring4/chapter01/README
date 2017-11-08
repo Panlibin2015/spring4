@@ -1,0 +1,22 @@
+一、Spring 简历
+1.Spring 发展过程
+   ①xml配置阶段------>注解阶段------>Java配置阶段
+   ②Spring1.x(xml配置）--------->Spring 2.x(注解）------->Spring 3.x（提供了Java配置的能力)
+2.Spring 基础配置
+    ①IOC与DI:所谓依赖注入是指容器负责创建对象和维护对象之间的依赖关系，而不是对象本身负责自己的创建解决自己的依赖。
+         a.Spring通过组合的理念来扩展类的功能，扩展类与被组合类之间关系独立，从而降低耦合度；
+    ②Spring提供xml、注解、Java配置、Groovy配置实现Bean的创建和注入；
+
+    ③申明Bean的相关注解
+        @Component组件，       没有明确角色；
+        @Service               在业务逻辑层使用
+        @Repository            在数据访问层使用
+        @Controller            在展现层使用
+
+        注入Bean的注解
+        @Autowired             Spring提供的注解
+        @Inject                JSR-330提供的注解
+        @Resource              JSR-250提供的注解
+3.Java 配置 - 实现IOC与DI
+        @Configuration         声明一个配置类，等同于一个Spring配置文件
+        @Bean                  作用于方法，声明当前方法的返回值为一个Bean(可以配合@Scope 来确定其作用域）
