@@ -35,3 +35,18 @@
             |-global session    会话
             |-待补充
       注：该部分查看案例 com.demo.spring4.chapter01.javaconfig 下的案例
+三、Spring AOP
+1.面向切面编程
+    ①Spring的AOP存在的目的就是解耦。(实现了扩展|增强方法与实际业务类之间的关系解耦)
+    ②Spring的AOP可以提高代码开发效率。(体现在同样实现动态代理，我们需要定义代理接口、代理类、代理实现类，并且需要组织相互之间的依赖；而Spring AOP我们只需要关注实现类与实现接口)
+2.Spring支持AspectJ 注解式切面编程
+    ①使用@AspectJ 声明一个切面
+    ②使用@After、@Before、@Around定义建言(Advice),可以直接拦截规则(切点）作为参数
+    ③其中@After、@Before、@Around参数的拦截规则为切点(PointCut),@PointCut专门定义拦截规则，以便复用
+    ④其中每一个被拦截处为连接点（JoinPoint）
+3.Aop由2种配置方式
+    a)xml配置
+
+    b)AspectJ配置
+        ①@annotation("注解接口")         注解拦截
+        ②execution(* * *）               规则拦截
