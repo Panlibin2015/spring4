@@ -10,7 +10,11 @@
 
     <properties>
         <java.version>1.7</java.version>
+<<<<<<< HEAD
         <org.springframework>4.3.12.RELEASE</org.springframework>
+=======
+        <springframework.version>4.1.6.RELEASE</springframework.version>
+>>>>>>> temp
     </properties>
 
     <dependencies>
@@ -22,11 +26,17 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+<<<<<<< HEAD
             <version>${org.springframework}</version>
+=======
+            <version>${springframework.version}</version>
+>>>>>>> temp
         </dependency>
+        <!-- Spring Aop 依赖 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
+<<<<<<< HEAD
             <version>${org.springframework}</version>
         </dependency>
         <dependency>
@@ -38,6 +48,25 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.10</version>
+=======
+            <version>${springframework.version}</version>
+        </dependency>
+        <!-- AspectJ 依赖 -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.3.2</version>
+>>>>>>> temp
         </dependency>
     </dependencies>
     <build>
