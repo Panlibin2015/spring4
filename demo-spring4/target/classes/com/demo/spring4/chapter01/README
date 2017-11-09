@@ -1,22 +1,37 @@
-一、Spring 简历
+一、Spring 简介
 1.Spring 发展过程
    ①xml配置阶段------>注解阶段------>Java配置阶段
    ②Spring1.x(xml配置）--------->Spring 2.x(注解）------->Spring 3.x（提供了Java配置的能力)
-2.Spring 基础配置
+
+二、Spring Ioc与Di
+1.Spring 基础配置
     ①IOC与DI:所谓依赖注入是指容器负责创建对象和维护对象之间的依赖关系，而不是对象本身负责自己的创建解决自己的依赖。
          a.Spring通过组合的理念来扩展类的功能，扩展类与被组合类之间关系独立，从而降低耦合度；
     ②Spring提供xml、注解、Java配置、Groovy配置实现Bean的创建和注入；
-
-    ③申明Bean的相关注解
-        @Component组件，       没有明确角色；
+2.Spring IOC相关注解
+    ①申明Bean的相关注解
+        @Component             没有明确角色
         @Service               在业务逻辑层使用
         @Repository            在数据访问层使用
         @Controller            在展现层使用
-
-        注入Bean的注解
+    ②注入Bean的注解
         @Autowired             Spring提供的注解
         @Inject                JSR-330提供的注解
         @Resource              JSR-250提供的注解
-3.Java 配置 - 实现IOC与DI
+3.Java 配置相关注解 - 实现IOC与DI
+     ①注解功能说明
         @Configuration         声明一个配置类，等同于一个Spring配置文件
         @Bean                  作用于方法，声明当前方法的返回值为一个Bean(可以配合@Scope 来确定其作用域）
+     ②注解详细说明
+        @Bean(Bean声明。作用于配置类的方法)
+            |-name:             beanId声明
+            |-initMethod:       初始化方法声明
+            |-destroyMethod:    销毁方法声明
+        @Scope(作用域。作用于配置类的方法，或者组件的类)
+            |-singleton:        单例
+            |-prototype:        多例
+            |-request:          请求HttpRequest
+            |-session:          会话
+            |-global session    会话
+            |-待补充
+      注：该部分查看案例 com.demo.spring4.chapter01.javaconfig 下的案例
